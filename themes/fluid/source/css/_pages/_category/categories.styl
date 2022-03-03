@@ -1,0 +1,29 @@
+.category-tree-list
+  font-size s = 1.2rem
+  list-style-type none
+  .category-tree-list-item
+    position relative
+    margin: .4rem 0
+    background: rgba(10,10,10,.1)
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left : 0
+      height 100%
+      width: .4rem
+      background: #1abc9c
+    .category-tree-list-link
+      display inline-block
+      padding .1rem 1rem
+
+    .category-tree-list-count
+      color #95a5a6
+      font-size s* (3 / 4)
+
+      &::before
+        content: "("
+
+      &::after
+        content: ")"
+
